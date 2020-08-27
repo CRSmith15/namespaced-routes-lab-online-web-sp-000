@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
   resources :songs
 
-  namepace :admin do 
+  namepace :admin do
     resources :preferences, only: [:index, :update]
   end
 
